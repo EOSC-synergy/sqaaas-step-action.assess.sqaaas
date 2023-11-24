@@ -10,7 +10,7 @@ pipeline {
     agent any
 
     stages {
-        stage('SQA baseline criterion: QC.Acc & QC.Doc & QC.Lic & QC.Sec & QC.Sty & QC.Ver') {
+        stage('SQA baseline criterion: QC.Acc & QC.Doc & QC.Lic & QC.Sec & QC.Sty & QC.Ver & QC.Uni') {
             when {
                 anyOf {
                     changeset ".sqa/*"
