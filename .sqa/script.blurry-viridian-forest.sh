@@ -6,5 +6,5 @@
 cd github.com/EOSC-synergy/sqaaas-step-action &&
     make&&
     micromamba activate ./.venv&&
-    pytest .
+    pytest --json-report .
 )
