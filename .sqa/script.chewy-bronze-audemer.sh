@@ -4,7 +4,8 @@
 
 (
 cd github.com/EOSC-synergy/sqaaas-step-action &&
-    make&&
-    micromamba activate ./.venv&&
-    pytest --json-report .
+    make torch-cpu&&
+    make tf-2.13&&
+    micromamba run -p ./.venv-pytorch pip install .[dev]&&
+    micromamba run -p ./.venv-pytorch pytest -v ./tests/ -m "not slurm"
 )
