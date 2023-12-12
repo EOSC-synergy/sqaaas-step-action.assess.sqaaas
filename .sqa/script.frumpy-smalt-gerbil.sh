@@ -4,7 +4,5 @@
 
 (
 cd github.com/EOSC-synergy/sqaaas-step-action &&
-    make&&
-    micromamba activate ./.venv&&
-    pytest --json-report .
+    pytest tests --json-report  --json-report-indent 4
 )
