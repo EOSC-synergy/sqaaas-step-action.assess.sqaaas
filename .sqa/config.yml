@@ -5,7 +5,7 @@ config:
       branch: main
       repo: https://github.com/EOSC-synergy/sqaaas-step-action
     github.com/EOSC-synergy/sqaaas-tooling:
-      branch: release/1.7.13
+      branch: release/2.0.0
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
 environment:
   JPL_DOCKERFORCEBUILD: enabled
@@ -15,48 +15,54 @@ sqa_criteria:
     repos:
       github.com/EOSC-synergy/sqaaas-step-action git:
         commands:
-        - /usr/bin/env sh .sqa/script.grumpy-myrtle-clam.sh
-        container: qc.acc_zippy-coral-orangutan
+        - /usr/bin/env sh .sqa/script.nerdy-celadon-bear.sh
+        container: qc.acc_fuzzy-cinnabar-wolverine
   QC.Doc:
     repos:
       github.com/EOSC-synergy/sqaaas-step-action find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.sleepy-ecru-weasel.sh
-        container: qc.doc_scanty-chocolate-termite
+        - /usr/bin/env sh .sqa/script.snappy-green-swan.sh
+        container: qc.doc_wheezy-viridian-llama
       github.com/EOSC-synergy/sqaaas-step-action git:
         commands:
-        - /usr/bin/env sh .sqa/script.nippy-rust-dhole.sh
-        container: qc.doc_pretty-asparagus-booby
+        - /usr/bin/env sh .sqa/script.surly-pear-koala.sh
+        container: qc.doc_smelly-orange-quetzal
       github.com/EOSC-synergy/sqaaas-step-action markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.leaky-razzmatazz-bandicoot.sh
-        container: qc.doc_goopy-pumpkin-mau
+        - /usr/bin/env sh .sqa/script.leaky-eggplant-foxhound.sh
+        container: qc.doc_crabby-burgundy-camel
   QC.Lic:
     repos:
       github.com/EOSC-synergy/sqaaas-step-action licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.homely-coral-zebra.sh
-        container: qc.lic_stuffy-cerulean-reindeer
+        - /usr/bin/env sh .sqa/script.blurry-gamboge-hyrax.sh
+        container: qc.lic_crabby-amaranth-cattle
   QC.Sec:
     repos:
       github.com/EOSC-synergy/sqaaas-step-action bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.flimsy-pink-schnauzer.sh
-        container: qc.sec_sleepy-sepia-indri
+        - /usr/bin/env sh .sqa/script.craggy-cerulean-mole.sh
+        container: qc.sec_scanty-tomato-tapir
   QC.Sty:
     repos:
       github.com/EOSC-synergy/sqaaas-step-action flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.cloudy-silver-giraffe.sh
-        container: qc.sty_homely-cardinal-sheep
+        - /usr/bin/env sh .sqa/script.woolly-pear-shark.sh
+        container: qc.sty_flabby-thistle-hummingbird
       github.com/EOSC-synergy/sqaaas-step-action hadolint:
         commands:
-        - /usr/bin/env sh .sqa/script.crappy-buff-gibbon.sh
-        container: qc.sty_bumpy-sangria-loon
+        - /usr/bin/env sh .sqa/script.muzzy-chartreuse-moose.sh
+        container: qc.sty_clammy-crimson-dalmatian
+  QC.Uni:
+    repos:
+      github.com/EOSC-synergy/sqaaas-step-action pytest:
+        commands:
+        - /usr/bin/env sh .sqa/script.snappy-aqua-devil.sh
+        container: qc.uni_greasy-gamboge-burmese
   QC.Ver:
     repos:
       github.com/EOSC-synergy/sqaaas-step-action get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.sleepy-blue-ostrich.sh
-        container: qc.ver_hazy-thistle-anteater
+        - /usr/bin/env sh .sqa/script.sloppy-lemon-flamingo.sh
+        container: qc.ver_ugly-lime-cougar
 timeout: 5400
