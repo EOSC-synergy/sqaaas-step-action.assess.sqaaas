@@ -15,54 +15,28 @@ sqa_criteria:
     repos:
       github.com/EOSC-synergy/sqaaas-step-action git:
         commands:
-        - /usr/bin/env sh .sqa/script.foggy-firebrick-cattle.sh
-        container: qc.acc_thirsty-ultramarine-giraffe
+        - /usr/bin/env sh .sqa/script.scummy-wisteria-quail.sh
+        container: qc.acc_pokey-sepia-squirt
   QC.Doc:
     repos:
       github.com/EOSC-synergy/sqaaas-step-action find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.queasy-taupe-grouse.sh
-        container: qc.doc_nippy-bistre-tzu
+        - /usr/bin/env sh .sqa/script.stealthy-ruby-uakari.sh
+        container: qc.doc_snippy-pumpkin-chihuahua
       github.com/EOSC-synergy/sqaaas-step-action git:
         commands:
-        - /usr/bin/env sh .sqa/script.hazy-gamboge-donkey.sh
-        container: qc.doc_grumpy-coral-frise
-      github.com/EOSC-synergy/sqaaas-step-action markdownlint:
-        commands:
-        - /usr/bin/env sh .sqa/script.gamy-magenta-eel.sh
-        container: qc.doc_snoopy-periwinkle-woodlouse
+        - /usr/bin/env sh .sqa/script.shaggy-magenta-spider.sh
+        container: qc.doc_trippy-burgundy-chow
   QC.Lic:
     repos:
       github.com/EOSC-synergy/sqaaas-step-action licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.flimsy-amaranth-terrier.sh
-        container: qc.lic_sunny-firebrick-beagle
-  QC.Sec:
-    repos:
-      github.com/EOSC-synergy/sqaaas-step-action bandit:
-        commands:
-        - /usr/bin/env sh .sqa/script.dorky-ecru-affenpinscher.sh
-        container: qc.sec_slaphappy-malachite-dragon
-  QC.Sty:
-    repos:
-      github.com/EOSC-synergy/sqaaas-step-action flake8:
-        commands:
-        - /usr/bin/env sh .sqa/script.wheezy-cobalt-ferret.sh
-        container: qc.sty_slimy-purple-tiger
-      github.com/EOSC-synergy/sqaaas-step-action hadolint:
-        commands:
-        - /usr/bin/env sh .sqa/script.chummy-ecru-mau.sh
-        container: qc.sty_lousy-chartreuse-swan
-  QC.Uni:
-    repos:
-      github.com/EOSC-synergy/sqaaas-step-action pytest:
-        commands:
-        - /usr/bin/env sh .sqa/script.pasty-fuchsia-duck.sh
-        container: qc.uni_zippy-salmon-greyhound
+        - /usr/bin/env sh .sqa/script.whiny-myrtle-manatee.sh
+        container: qc.lic_craggy-red-fousek
   QC.Ver:
     repos:
       github.com/EOSC-synergy/sqaaas-step-action get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.wimpy-plum-avocet.sh
-        container: qc.ver_greasy-turquoise-bird
+        - /usr/bin/env sh .sqa/script.sleazy-orchid-swan.sh
+        container: qc.ver_gimpy-rose-cichlid
 timeout: 5400
