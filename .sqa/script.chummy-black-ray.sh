@@ -4,6 +4,6 @@
 # SPDX-License-Identifier: GPL-3.0-only
 
 (
-cd github.com/EOSC-synergy/sqaaas-step-action &&
-    pytest  --json-report  --json-report-indent 4
+cd github.com/eosc-synergy/sqaaas-step-action &&
+    find_doc_files.py --file_type all
 )

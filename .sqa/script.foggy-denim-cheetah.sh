@@ -4,6 +4,6 @@
 # SPDX-License-Identifier: GPL-3.0-only
 
 (
-cd github.com/EOSC-synergy/sqaaas-step-action &&
-    flake8 .
+cd github.com/eosc-synergy/sqaaas-step-action &&
+    hadolint Dockerfile --failure-threshold error
 )
